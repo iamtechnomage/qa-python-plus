@@ -16,7 +16,7 @@ def test_calc_operations(operation, first_int, second_int, result):
 
 @pytest.mark.parametrize("operation, first_int, second_int, result",
                          [("sim", 1, 2, Exception("Wrong operation")), ],
-                         ids=["Exception test"]
+                         ids=["Exception test (conflict)"]
                          )
 def test_calc_operations_exception(operation, first_int, second_int, result):
     with pytest.raises(Exception):
